@@ -1,5 +1,5 @@
 ﻿import 'package:flutter/material.dart';
-import 'package:quiz02/page/cortinaLogin_page.dart';
+import 'package:quiz02/page/cortina_login_page.dart';
 
 void main() {
   runApp(const CortinaApp());
@@ -11,7 +11,7 @@ class CortinaApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Cortina Login',
+      title: 'Cortina Movies',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
@@ -35,9 +35,3 @@ class CortinaApp extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-

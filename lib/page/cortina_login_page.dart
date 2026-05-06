@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:quiz02/cortina_text_field.dart';
+import 'package:quiz02/cortina_components.dart';
 import 'package:quiz02/outlined_action_button.dart';
-import 'package:quiz02/page/cortina_primary_button.dart';
-import 'package:quiz02/social_signIn_button.dart';
+import 'package:quiz02/page/home_page.dart';
+import 'package:quiz02/social_sign_in_button.dart';
 
 class CortinaLoginPage extends StatelessWidget {
   const CortinaLoginPage({super.key});
@@ -79,7 +79,17 @@ class CortinaLoginPage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 22),
-                    CortinaPrimaryButton(label: 'LOGIN', onPressed: () {}),
+                    CortinaPrimaryButton(
+                      label: 'LOGIN',
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const HomePage(),
+                          ),
+                        );
+                      },
+                    ),
                     const SizedBox(height: 16),
                     SocialSignInButton(
                       label: 'SIGN IN WITH GOOGLE',
